@@ -53,7 +53,7 @@ export default function Home({ onReserve }) {
         
 <div className="home-image">
   <img
-    src="/Restaurante.jpg"
+    src={`${import.meta.env.BASE_URL}Restaurante.jpg`}
     alt="Interior del restaurante MesaNova"
   />
 </div>
