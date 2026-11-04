@@ -1,0 +1,134 @@
+
+> mesanova-reservas@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: 01 · Reserva válida: asigna la mesa más pequeña suficiente
+ok 1 - 01 · Reserva válida: asigna la mesa más pequeña suficiente
+  ---
+  duration_ms: 16.368154
+  type: 'test'
+  ...
+# Subtest: 02 · Dos clientes reciben mesas diferentes en el mismo horario
+ok 2 - 02 · Dos clientes reciben mesas diferentes en el mismo horario
+  ---
+  duration_ms: 1.054681
+  type: 'test'
+  ...
+# Subtest: 03 · Rechaza duplicado de correo normalizando espacios y mayúsculas
+ok 3 - 03 · Rechaza duplicado de correo normalizando espacios y mayúsculas
+  ---
+  duration_ms: 0.661577
+  type: 'test'
+  ...
+# Subtest: 04 · El cupo depende de mesas adecuadas, no solo de sillas libres
+ok 4 - 04 · El cupo depende de mesas adecuadas, no solo de sillas libres
+  ---
+  duration_ms: 0.820607
+  type: 'test'
+  ...
+# Subtest: 05 · Cancelar libera una mesa sin borrar el historial
+ok 5 - 05 · Cancelar libera una mesa sin borrar el historial
+  ---
+  duration_ms: 0.686556
+  type: 'test'
+  ...
+# Subtest: 06 · Reprogramar no se compara consigo mismo
+ok 6 - 06 · Reprogramar no se compara consigo mismo
+  ---
+  duration_ms: 2.66586
+  type: 'test'
+  ...
+# Subtest: 07 · No admite modificar una reserva que otra pestaña canceló
+ok 7 - 07 · No admite modificar una reserva que otra pestaña canceló
+  ---
+  duration_ms: 0.541016
+  type: 'test'
+  ...
+# Subtest: 08 · Intervalos contiguos de 90 minutos no se superponen
+ok 8 - 08 · Intervalos contiguos de 90 minutos no se superponen
+  ---
+  duration_ms: 0.220633
+  type: 'test'
+  ...
+# Subtest: 09 · Un horario pasado no se puede reservar
+ok 9 - 09 · Un horario pasado no se puede reservar
+  ---
+  duration_ms: 0.601046
+  type: 'test'
+  ...
+# Subtest: 10 · Rechaza fechas anteriores y posteriores al horizonte
+ok 10 - 10 · Rechaza fechas anteriores y posteriores al horizonte
+  ---
+  duration_ms: 2.023031
+  type: 'test'
+  ...
+# Subtest: 11 · Valida nombre, correo y celular juntos
+ok 11 - 11 · Valida nombre, correo y celular juntos
+  ---
+  duration_ms: 0.902952
+  type: 'test'
+  ...
+# Subtest: 12 · Rechaza cero, siete y fracciones de personas
+ok 12 - 12 · Rechaza cero, siete y fracciones de personas
+  ---
+  duration_ms: 0.727767
+  type: 'test'
+  ...
+# Subtest: 13 · Fecha de Lima correcta alrededor de medianoche UTC
+ok 13 - 13 · Fecha de Lima correcta alrededor de medianoche UTC
+  ---
+  duration_ms: 0.458221
+  type: 'test'
+  ...
+# Subtest: 14 · Alta demanda: seis mesas ocupadas y séptima rechazada
+ok 14 - 14 · Alta demanda: seis mesas ocupadas y séptima rechazada
+  ---
+  duration_ms: 2.00904
+  type: 'test'
+  ...
+# Subtest: 15 · Datos persistidos inválidos se detectan
+ok 15 - 15 · Datos persistidos inválidos se detectan
+  ---
+  duration_ms: 0.705214
+  type: 'test'
+  ...
+# Subtest: 16 · Cancelar un registro inexistente informa un conflicto
+ok 16 - 16 · Cancelar un registro inexistente informa un conflicto
+  ---
+  duration_ms: 0.082935
+  type: 'test'
+  ...
+# Subtest: 17 · Rechaza fechas inexistentes aunque JavaScript las normalice
+ok 17 - 17 · Rechaza fechas inexistentes aunque JavaScript las normalice
+  ---
+  duration_ms: 0.068123
+  type: 'test'
+  ...
+# Subtest: 18 · Exige seleccionar una mesa antes de confirmar
+ok 18 - 18 · Exige seleccionar una mesa antes de confirmar
+  ---
+  duration_ms: 0.509468
+  type: 'test'
+  ...
+# Subtest: 19 · Rechaza una mesa ocupada aunque haya otra disponible
+ok 19 - 19 · Rechaza una mesa ocupada aunque haya otra disponible
+  ---
+  duration_ms: 0.496649
+  type: 'test'
+  ...
+# Subtest: 20 · Rechaza una mesa con capacidad insuficiente
+ok 20 - 20 · Rechaza una mesa con capacidad insuficiente
+  ---
+  duration_ms: 0.394425
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 108.551058

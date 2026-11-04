@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect x="0" y="0" width="1200" height="800" rx="0" fill="#f7f5ef" stroke="#f7f5ef"/>
+<text x="45" y="60.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="28">MesaNova.</text>
+<text x="45" y="75.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="9">RESTAURANTE &amp; ENCUENTROS</text>
+<rect x="690" y="28" width="155" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="767.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Reservar una mesa</text>
+<rect x="855" y="28" width="125" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="917.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Mis reservas</text>
+<rect x="990" y="28" width="165" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="1072.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Administración</text>
+<text x="45" y="117.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="11">PROTOTIPO INTERACTIVO · Datos ficticios · Fecha de demostración: 3 de noviembre de 2026</text>
+<text x="45" y="767.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">MesaNova · Reservar debería ser la parte fácil.</text>
+<text x="45" y="206.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="38">Tus próximos encuentros.</text>
+<text x="45" y="237.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="15">Reservas guardadas en este navegador.</text>
+<rect x="45" y="275" width="1110" height="380" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="70" y="315.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Buscar por nombre, correo o código</text>
+<rect x="70" y="327" width="380" height="44" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="82" y="355.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">Ana</text>
+<text x="475" y="315.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Fecha</text>
+<rect x="475" y="327" width="230" height="44" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="487" y="355.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">03/11/2026</text>
+<text x="730" y="315.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Estado</text>
+<rect x="730" y="327" width="230" height="44" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="742" y="355.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">Todos</text>
+<text x="70" y="462.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="28">13:30</text>
+<text x="70" y="490.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">3 de noviembre de 2026</text>
+<text x="330" y="454.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="20">Ana de Prueba</text>
+<text x="330" y="487.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">ana@example.test</text>
+<text x="330" y="508.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">2 personas · Mesa M1 · DEMO0001</text>
+<text x="930" y="447.0" fill="#a4382a" font-family="Arial,sans-serif" font-weight="bold" font-size="15">Cancelada</text>
+<text x="70" y="584.0" fill="#214e40" font-family="Arial,sans-serif" font-weight="normal" font-size="16">La mesa volvió a estar disponible.</text>
+<rect x="935" y="185" width="220" height="44" rx="8" fill="#214e40" stroke="#214e40"/>
+<text x="1045.0" y="212" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-weight="bold" font-size="13">+ Nueva reserva</text>
+</svg>

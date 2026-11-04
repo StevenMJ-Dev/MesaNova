@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect x="0" y="0" width="1200" height="800" rx="0" fill="#f7f5ef" stroke="#f7f5ef"/>
+<text x="45" y="60.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="28">MesaNova.</text>
+<text x="45" y="75.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="9">RESTAURANTE &amp; ENCUENTROS</text>
+<rect x="690" y="28" width="155" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="767.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Reservar una mesa</text>
+<rect x="855" y="28" width="125" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="917.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Mis reservas</text>
+<rect x="990" y="28" width="165" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="1072.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Administración</text>
+<text x="45" y="117.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="11">PROTOTIPO INTERACTIVO · Datos ficticios · Fecha de demostración: 3 de noviembre de 2026</text>
+<text x="45" y="767.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">MesaNova · Reservar debería ser la parte fácil.</text>
+<text x="45" y="181.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="bold" font-size="11">BUENA COMIDA. MEJOR COMPAÑÍA.</text>
+<text x="45" y="262.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="46">El encuentro</text>
+<text x="45" y="331.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="46">empieza con</text>
+<text x="45" y="400.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="46">una mesa.</text>
+<text x="45" y="451.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="16">Elige el día, encuentra tu horario</text>
+<text x="45" y="475.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="16">y ven a disfrutar.</text>
+<rect x="45" y="490" width="390" height="185" rx="80" fill="#e7ecdf" stroke="#e7ecdf"/>
+<text x="160" y="610.0" fill="#889a76" font-family="Arial,sans-serif" font-weight="normal" font-size="75">m.</text>
+<text x="88" y="650.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">Un lugar para los buenos momentos.</text>
+<rect x="495" y="156" width="660" height="555" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="525" y="193.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="bold" font-size="11">TU PRÓXIMO ENCUENTRO</text>
+<text x="525" y="245.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="30">Tu mesa está confirmada</text>
+<text x="525" y="281.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="13">○ 1 Fecha y hora      ○ 2 Tus datos      ● 3 Confirmación</text>
+<text x="525" y="342.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="22">Te esperamos, Ana.</text>
+<text x="525" y="404.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="22">3 de noviembre de 2026</text>
+<text x="525" y="437.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="22">13:30 · Hora de Lima</text>
+<text x="525" y="470.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="22">2 personas · Mesa M1</text>
+<text x="525" y="503.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="22">Código DEMO0001</text>
+<text x="525" y="562.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">Guarda tu código. La confirmación se muestra en pantalla.</text>
+<rect x="525" y="630" width="600" height="44" rx="8" fill="#214e40" stroke="#214e40"/>
+<text x="825.0" y="657" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Ver mis reservas →</text>
+</svg>

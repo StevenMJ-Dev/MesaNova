@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect x="0" y="0" width="1200" height="800" rx="0" fill="#f7f5ef" stroke="#f7f5ef"/>
+<text x="45" y="60.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="28">MesaNova.</text>
+<text x="45" y="75.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="9">RESTAURANTE &amp; ENCUENTROS</text>
+<rect x="690" y="28" width="155" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="767.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Reservar una mesa</text>
+<rect x="855" y="28" width="125" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="917.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Mis reservas</text>
+<rect x="990" y="28" width="165" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="1072.5" y="55" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Administración</text>
+<text x="45" y="117.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="11">PROTOTIPO INTERACTIVO · Datos ficticios · Fecha de demostración: 3 de noviembre de 2026</text>
+<text x="45" y="767.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="12">MesaNova · Reservar debería ser la parte fácil.</text>
+<text x="45" y="203.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="38">Todo listo para recibir.</text>
+<rect x="45" y="240" width="360" height="100" rx="10" fill="#edf2e7" stroke="#dedfd6"/>
+<text x="65" y="271.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="13">Reservas confirmadas</text>
+<text x="65" y="318.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="30">1</text>
+<rect x="420" y="240" width="360" height="100" rx="10" fill="#edf2e7" stroke="#dedfd6"/>
+<text x="440" y="271.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="13">Comensales esperados</text>
+<text x="440" y="318.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="30">2</text>
+<rect x="795" y="240" width="360" height="100" rx="10" fill="#edf2e7" stroke="#dedfd6"/>
+<text x="815" y="271.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="13">Mesas del restaurante</text>
+<text x="815" y="318.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="30">6</text>
+<rect x="45" y="370" width="1110" height="320" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="70" y="421.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="27">Gestión de reservas</text>
+<text x="70" y="457.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Buscar cliente</text>
+<rect x="70" y="469" width="400" height="44" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="82" y="497.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">Ana</text>
+<text x="495" y="457.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Fecha</text>
+<rect x="495" y="469" width="220" height="44" rx="10" fill="#ffffff" stroke="#dedfd6"/>
+<text x="507" y="497.0" fill="#64726a" font-family="Arial,sans-serif" font-weight="normal" font-size="14">03/11/2026</text>
+<text x="70" y="576.0" fill="#193b32" font-family="Arial,sans-serif" font-weight="normal" font-size="16">13:30     Ana de Prueba     ·     2 personas     ·     Mesa M1     ·     Confirmada</text>
+<rect x="740" y="610" width="170" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="825.0" y="637" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Modificar</text>
+<rect x="930" y="610" width="170" height="44" rx="8" fill="#edf2e7" stroke="#edf2e7"/>
+<text x="1015.0" y="637" text-anchor="middle" fill="#214e40" font-family="Arial,sans-serif" font-weight="bold" font-size="13">Cancelar</text>
+</svg>

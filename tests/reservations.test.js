@@ -1,0 +1,27 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createReservation,cancelReservation,availableTables,overlaps,today,validateDetails,validStoredRecord} from '../src/lib/reservations.js';
+const now=new Date('2026-11-02T15:00:00Z');
+const base={name:'Ana de Prueba',email:'ana@example.test',phone:'999000111',notes:'Caso académico',tableId:'M1',date:'2026-11-03',time:'12:00',guests:2};
+const create=(records=[],changes={},id='r1')=>createReservation(records,{...base,...changes},{now,id});
+test('01 · Reserva válida: asigna la mesa más pequeña suficiente',()=>{const r=create();assert.equal(r.ok,true);assert.equal(r.reservation.tableId,'M1');assert.equal(r.records.length,1);});
+test('02 · Dos clientes reciben mesas diferentes en el mismo horario',()=>{const a=create();const b=create(a.records,{email:'b@example.test',tableId:'M2'},'r2');assert.equal(b.ok,true);assert.equal(b.reservation.tableId,'M2');});
+test('03 · Rechaza duplicado de correo normalizando espacios y mayúsculas',()=>{const a=create();assert.equal(create(a.records,{email:' ANA@EXAMPLE.TEST '}).ok,false);});
+test('04 · El cupo depende de mesas adecuadas, no solo de sillas libres',()=>{const a=create([],{guests:6,tableId:'M5'});const b=create(a.records,{guests:6,tableId:'M6',email:'b@example.test'},'r2');assert.equal(b.reservation.tableId,'M6');assert.equal(create(b.records,{guests:6,tableId:'M5',email:'c@example.test'},'r3').ok,false);});
+test('05 · Cancelar libera una mesa sin borrar el historial',()=>{const a=create();const r=cancelReservation(a.records,'r1');assert.equal(r.records.length,1);assert.equal(r.records[0].status,'cancelled');assert.equal(availableTables(r.records,base.date,base.time,2,null,now).length,6);});
+test('06 · Reprogramar no se compara consigo mismo',()=>{const a=create();const b=createReservation(a.records,{...base,time:'13:30'},{now,ignoreId:'r1'});assert.equal(b.ok,true);assert.equal(b.records.length,1);assert.equal(b.reservation.id,'r1');});
+test('07 · No admite modificar una reserva que otra pestaña canceló',()=>{const a=cancelReservation(create().records,'r1');assert.equal(createReservation(a.records,base,{now,ignoreId:'r1'}).ok,false);});
+test('08 · Intervalos contiguos de 90 minutos no se superponen',()=>{assert.equal(overlaps({date:base.date,time:'12:00'},{date:base.date,time:'13:30'}),false);assert.equal(overlaps({date:base.date,time:'12:00'},{date:base.date,time:'13:00'}),true);});
+test('09 · Un horario pasado no se puede reservar',()=>assert.equal(createReservation([],{...base,date:'2026-11-02',time:'12:00'},{now:new Date('2026-11-02T18:00:00Z'),id:'r'}).ok,false));
+test('10 · Rechaza fechas anteriores y posteriores al horizonte',()=>{assert.equal(create([],{date:'2026-11-01'}).ok,false);assert.equal(create([],{date:'2027-06-01'}).ok,false);});
+test('11 · Valida nombre, correo y celular juntos',()=>{const e=validateDetails({...base,name:'A',email:'mal',phone:'123'},now);assert.deepEqual(Object.keys(e),['name','email','phone']);});
+test('12 · Rechaza cero, siete y fracciones de personas',()=>{for(const guests of [0,7,2.5])assert.equal(create([],{guests}).ok,false);});
+test('13 · Fecha de Lima correcta alrededor de medianoche UTC',()=>assert.equal(today(new Date('2026-11-03T02:00:00Z')),'2026-11-02'));
+test('14 · Alta demanda: seis mesas ocupadas y séptima rechazada',()=>{let records=[];for(let i=0;i<6;i++){const r=create(records,{email:`p${i}@example.test`,tableId:`M${i+1}`},`r${i}`);assert.equal(r.ok,true);records=r.records;}assert.equal(create(records,{email:'extra@example.test'}).ok,false);assert.equal(new Set(records.map(r=>r.tableId)).size,6);});
+test('15 · Datos persistidos inválidos se detectan',()=>{assert.equal(validStoredRecord(create().reservation),true);assert.equal(validStoredRecord({...create().reservation,tableId:'M99'}),false);assert.equal(validStoredRecord(null),false);});
+test('16 · Cancelar un registro inexistente informa un conflicto',()=>assert.equal(cancelReservation([],'unknown').ok,false));
+
+test('17 · Rechaza fechas inexistentes aunque JavaScript las normalice',()=>assert.equal(create([],{date:'2026-11-31'}).ok,false));
+test('18 · Exige seleccionar una mesa antes de confirmar',()=>{const r=create([],{tableId:undefined});assert.equal(r.ok,false);assert.ok(r.errors?.tableId);});
+test('19 · Rechaza una mesa ocupada aunque haya otra disponible',()=>{const a=create();const b=create(a.records,{email:'b@example.test',tableId:'M1'},'r2');assert.equal(b.ok,false);assert.ok(b.errors?.tableId);});
+test('20 · Rechaza una mesa con capacidad insuficiente',()=>{const r=create([],{guests:6,tableId:'M1'});assert.equal(r.ok,false);assert.ok(r.errors?.tableId);});

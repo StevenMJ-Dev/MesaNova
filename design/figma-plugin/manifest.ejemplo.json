@@ -1,0 +1,15 @@
+{
+  "name": "MesaNova - Importar prototipo",
+  "id": "REEMPLAZAR_POR_ID_ASIGNADO_POR_FIGMA",
+  "documentAccess": "dynamic-page",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}
