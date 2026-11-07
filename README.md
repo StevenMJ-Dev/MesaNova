@@ -154,6 +154,23 @@ npm run preview
 
 **Nota:** no se debe abrir directamente `index.html` para ejecutar la aplicación React.
 
+### Ejecución mediante GitHub Codespaces
+
+También es posible ejecutar MesaNova directamente desde GitHub Codespaces.
+
+1. Ingresar a https://codespaces.new/StevenMJ-Dev/MesaNova
+2. Iniciar sesión en GitHub y crear un Codespace.
+3. Esperar a que se abra el entorno de desarrollo.
+4. Abrir la terminal y ejecutar:
+
+```bash
+npm ci
+npm run dev -- --host 0.0.0.0
+```
+
+5. Ir a la pestaña **Ports (Puertos)**.
+6. Abrir el enlace correspondiente al puerto **5173**.
+  
 ## 9. Estructura del proyecto
 
 ```text
@@ -261,9 +278,11 @@ El proyecto contempla la evaluación de la navegación, claridad de los formular
 
 Durante las comprobaciones propias se revisaron aspectos de distribución y adaptación del panel administrativo en pantallas pequeñas, así como el funcionamiento de los controles principales.
 
-**Pendiente:** completar y documentar las pruebas de usabilidad con usuarios simulados, incluyendo las tareas, observaciones, problemas identificados y mejoras realizadas.
+Se definieron tres escenarios de evaluación de usabilidad para revisar la navegación, el proceso de reserva y la administración del sistema.
 
-Los resultados se incorporarán al informe técnico sin atribuir pruebas a participantes que todavía no las hayan realizado.
+El informe técnico describe las tareas propuestas y los aspectos que deben verificarse. Estos escenarios no constituyen resultados de pruebas realizadas con participantes.
+
+Las comprobaciones funcionales del sistema se documentan por separado en los archivos de pruebas del proyecto.
 
 ## 13. Alcance y limitaciones
 
@@ -282,13 +301,13 @@ La lógica de control de conflictos utiliza operaciones de almacenamiento local;
 
 ## 14. Repositorio y enlaces de entrega
 
-**Repositorio de GitHub:** Pendiente de publicación.
+**Repositorio de GitHub:** https://github.com/StevenMJ-Dev/MesaNova
 
-**Prototipo de Figma:** Pendiente de insertar el enlace compartido.
+**Aplicación web publicada:** https://stevenmj-dev.github.io/MesaNova/
 
-**Informe de sustentación:** `docs/Sustentacion_Tecnica_MesaNova.pdf`.
+**Enlace del prototipo Figma:** https://www.figma.com/design/IOlrHb1NXqP5KDIXaSnt2w/MesaNova
 
-Antes de la entrega se verificará que el docente pueda acceder al repositorio y al prototipo de Figma.
+**Informe técnico:** [Ver informe técnico de MesaNova](https://github.com/StevenMJ-Dev/MesaNova/blob/main/docs/Informe_Tecnico_Mesanova.pdf)
 
 No se incluirá la carpeta `node_modules` en el repositorio.
 
